@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NOR.BAND Beauty Lounge | Norbandbeauty Beverwijk</title>
+    <meta
+      name="description"
+      content="Welkom bij Norbandbeauty — luxe schoonheidsbehandelingen in Beverwijk. Jouw moment van beauty en ontspanning."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Ga naar inhoud</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html">
+          <img
+            class="brand__logo"
+            src="images/logo.png"
+            width="64"
+            height="64"
+            alt="NOR.BAND Beauty Lounge"
+          />
+          <span class="brand__text">
+            NOR.BAND
+            <small>Beauty Lounge</small>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Menu openen"
+        >
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Hoofdnavigatie">
+          <ul>
+            <li><a class="is-active" href="index.html">Home</a></li>
+            <li><a href="behandelingen.html">Behandelingen</a></li>
+            <li><a href="#over">Over ons</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="site-header__cta--desktop">
+              <!-- #sz-booking-open wordt door Salonized gebruikt om het boekingswidget te openen -->
+              <a class="btn btn--primary" href="#sz-booking-open">Afspraak maken</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="btn btn--primary site-header__cta--mobile" href="#sz-booking-open">Afspraak maken</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow">NOR.BAND Beauty Lounge</p>
+            <h1 id="hero-title">welkom bij Norbandbeauty</h1>
+            <p class="lead">Jouw moment van beauty en ontspanning</p>
+            <p>
+              Ervaar luxe schoonheidsbehandelingen in een ontspannen sfeer. Jouw moment van rust en
+              verzorging.
+            </p>
+            <div class="btn-row">
+              <a class="btn btn--primary" href="#sz-booking-open">Afspraak maken</a>
+              <a class="btn btn--ghost" href="behandelingen.html">Ontdek behandelingen</a>
+            </div>
+          </div>
+          <div class="hero__visual">
+            <img
+              src="images/hero-placeholder.svg"
+              width="1200"
+              height="700"
+              alt="Sfeerbeeld van de salon — placeholder"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="over" class="section" aria-labelledby="over-heading">
+        <div class="container">
+          <div class="philo">
+            <div class="philo__img">
+              <img
+                src="images/about-placeholder.svg"
+                width="800"
+                height="600"
+                alt="Interieur van de salon — placeholder"
+              />
+            </div>
+            <div class="philo__text">
+              <h2 id="over-heading">Over NOR.BAND</h2>
+              <p>
+                Bij Norbandbeauty staat jouw glow centraal. Verwen jezelf met verzorging die je laat
+                stralen van binnen en buiten. Loop weg met een glimlach en een boost voor je
+                zelfvertrouwen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" aria-labelledby="usp-heading">
+        <div class="container">
+          <div class="section__intro">
+            <h2 id="usp-heading">Waarom Norbandbeauty</h2>
+            <p>Kwaliteit, rust en resultaat — in balans met jouw wensen.</p>
+          </div>
+          <div class="card-grid card-grid--3">
+            <article class="card">
+              <h3>Premium producten</h3>
+              <p>
+                Wij werken uitsluitend met hoogwaardige, professionele producten voor optimale
+                resultaten.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Persoonlijke aanpak</h3>
+              <p>
+                Elke behandeling wordt afgestemd op jouw unieke wensen en huidtype.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Ontspannen sfeer</h3>
+              <p>
+                Geniet van een rustgevende omgeving waar je even helemaal tot rust kunt komen.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="highlight-heading">
+        <div class="container">
+          <div class="section__intro">
+            <h2 id="highlight-heading">Uitgelichte behandelingen</h2>
+            <p>Ontdek een selectie van onze meest gevraagde behandelingen.</p>
+          </div>
+          <div class="treat-grid">
+            <article class="card treat-card">
+              <h3>Facial treatments</h3>
+              <p>
+                Professionele huidverzorging voor een gezonde huid. Van acnebehandelingen tot
+                anti-aging.
+              </p>
+              <a class="treat-card__link" href="behandelingen.html#huidverzorging">Meer over huidverzorging →</a>
+            </article>
+            <article class="card treat-card">
+              <h3>Laser hair removal</h3>
+              <p>
+                Permanente ontharing met de nieuwste lasertechnologie voor langdurige resultaten.
+              </p>
+              <a class="treat-card__link" href="behandelingen.html#laserontharing">Meer over laserontharing →</a>
+            </article>
+            <article class="card treat-card">
+              <h3>Microneedling</h3>
+              <p>
+                Microneedling is dé oplossing voor een stralende, gladde huid en het verminderen van
+                fijne lijntjes, littekens en oneffenheden.
+              </p>
+              <a class="treat-card__link" href="behandelingen.html#huidverbetering">Meer over microneedling →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" aria-labelledby="filosofie-heading">
+        <div class="container">
+          <h2 id="filosofie-heading">Onze filosofie</h2>
+          <div class="philo">
+            <div class="philo__text">
+              <p>
+                Bij Norbandbeauty draait alles om één doel: jou laten stralen en je zelfverzekerd
+                laten voelen. Wij geloven dat echte schoonheid begint met persoonlijke aandacht,
+                tijd en expertise. Daarom werken wij niet met standaardbehandelingen, maar bieden we
+                maatwerk dat volledig is afgestemd op jouw wensen en behoeften.
+              </p>
+              <p>
+                Of je nu komt voor huidverbetering, beautybehandelingen of ontspanning: bij ons ben je
+                in goede handen. Wij kijken verder dan alleen de buitenkant en richten ons op een
+                totaalbeleving, waarbij kwaliteit, aandacht en resultaat centraal staan.
+              </p>
+            </div>
+            <div class="philo__img">
+              <img
+                src="images/about-placeholder.svg"
+                width="800"
+                height="600"
+                alt=""
+                role="presentation"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="team-heading">
+        <div class="container">
+          <div class="section__intro">
+            <h2 id="team-heading">Maak kennis met ons team</h2>
+            <p>
+              Onze schoonheidsspecialisten helpen jou stralend en zelfverzekerd te zijn. We zijn
+              gespecialiseerd in huidverjonging, pigmentvlekken, huidverbetering, laserontharing,
+              wenkbrauwen en bodycontouring. Elke specialist neemt uitgebreid de tijd voor jouw
+              intake, stelt een plan op maat op en begeleidt je van begin tot eind – altijd met zorg
+              en aandacht.
+            </p>
+          </div>
+          <div>
+            <img
+              src="images/team-placeholder.svg"
+              width="600"
+              height="400"
+              alt="Team — foto volgt"
+            />
+            <div class="team-placeholder">
+              <strong>Teamfoto’s volgen binnenkort</strong>
+              <span>Hier tonen we binnenkort portretten van onze specialisten.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" aria-labelledby="cta-mid-heading">
+        <div class="container">
+          <div class="cta-band">
+            <h2 id="cta-mid-heading">Plan je afspraak</h2>
+            <p>
+              Je bent van harte welkom! Boek online of bel ons voor je gratis consult of eerste
+              behandeling. Tijdens het consult kijken we samen naar jouw huidbehoeften en maken we een
+              mooi, op maat gemaakt behandelplan.
+            </p>
+            <a class="btn btn--primary" href="#sz-booking-open">Afspraak maken</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="site-footer" aria-labelledby="contact-heading">
+        <div class="container">
+          <h2 id="contact-heading">Contact</h2>
+          <div class="footer-grid">
+            <div class="footer-block">
+              <h3>Adres</h3>
+              <p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Plantage+150A+1943+LR+Beverwijk"
+                  rel="noopener noreferrer"
+                >
+                  Plantage 150A<br />
+                  1943 LR Beverwijk
+                </a>
+              </p>
+              <h3>Openingstijden</h3>
+              <ul>
+                <li>Di – vr: 9.00 – 17.00 uur</li>
+                <li>Zaterdag: 10.00 – 15.00 uur</li>
+                <li>Zondag &amp; maandag: gesloten</li>
+              </ul>
+            </div>
+            <div class="footer-block">
+              <h3>Bereikbaar</h3>
+              <p>
+                Telefoon:
+                <a href="tel:+31251306000">0251 306000</a>
+              </p>
+              <p>
+                WhatsApp:
+                <a href="https://wa.me/31251306000" rel="noopener noreferrer">0251 306000</a>
+              </p>
+              <p>
+                Instagram:
+                <a href="https://www.instagram.com/nor.bandbeauty/" rel="noopener noreferrer"
+                  >@nor.bandbeauty</a
+                >
+              </p>
+              <p>
+                E-mail:
+                <a href="mailto:norbandbeauty@gmail.com">norbandbeauty@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="booking" class="booking-section" aria-labelledby="booking-heading">
+        <div class="container booking-section__inner">
+          <h2 id="booking-heading">Online boeken</h2>
+          <p>Kies hieronder een moment dat bij jou past.</p>
+          <div
+            class="salonized-booking"
+            data-company="E9KZ1DDDucgbJcKUujtXjDxc"
+            data-color="#888182"
+            data-language="nl"
+            data-position="right"
+            data-outline="shadow"
+          ></div>
+          <script src="https://static-widget.salonized.com/loader.js"></script>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" style="padding-top: 0">
+      <div class="container">
+        <p style="margin: 0; font-size: 0.85rem; color: var(--color-soft); text-align: center">
+          © <span id="y"></span> NOR.BAND Beauty Lounge · Norbandbeauty · Beverwijk
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

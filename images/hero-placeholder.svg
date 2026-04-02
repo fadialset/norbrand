@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Salon sfeerbeeld placeholder">
+  <defs>
+    <linearGradient id="h" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8dfd8"/>
+      <stop offset="50%" style="stop-color:#dccdc4"/>
+      <stop offset="100%" style="stop-color:#c9b8b0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#h)"/>
+  <circle cx="600" cy="320" r="120" fill="#f5f0eb" opacity="0.35"/>
+  <text x="600" y="360" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#6b625c" opacity="0.7">Hero afbeelding</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Teamfoto placeholder">
+  <rect width="600" height="400" fill="#ebe3dd"/>
+  <circle cx="300" cy="160" r="56" fill="#c9b8b0" opacity="0.45"/>
+  <rect x="220" y="230" width="160" height="12" rx="4" fill="#a89890" opacity="0.4"/>
+  <text x="300" y="290" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#6b625c" opacity="0.65">Teamfoto volgt</text>
+</svg>
