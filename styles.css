@@ -1,19 +1,19 @@
 /* NOR.BAND Beauty Lounge — shared styles */
 
 :root {
-  --color-bg: #faf7f4;
-  --color-bg-alt: #f3ebe4;
+  --color-bg: #f7f7f7;
+  --color-bg-alt: #ebebeb;
   --color-surface: #ffffff;
-  --color-ink: #2e2a28;
-  --color-muted: #5c5652;
-  --color-soft: #8a817a;
-  --color-accent: #a67f78;
-  --color-accent-soft: #c9a9a2;
-  --color-line: #e5dcd4;
-  --color-rose: #d4b8b0;
+  --color-ink: #141414;
+  --color-muted: #4a4a4a;
+  --color-soft: #6b6b6b;
+  --color-accent: #2a2a2a;
+  --color-accent-soft: #8c8c8c;
+  --color-line: #d6d6d6;
+  --color-rose: #b8b8b8;
   --font-display: "Cormorant Garamond", "Times New Roman", serif;
   --font-body: "DM Sans", system-ui, -apple-system, sans-serif;
-  --shadow-soft: 0 12px 40px rgba(46, 42, 40, 0.08);
+  --shadow-soft: 0 12px 40px rgba(0, 0, 0, 0.08);
   --radius: 12px;
   --max: 1120px;
   --header-h: 72px;
@@ -126,7 +126,7 @@ h3 {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(250, 247, 244, 0.92);
+  background: rgba(247, 247, 247, 0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-line);
 }
@@ -262,22 +262,22 @@ h3 {
 
 .btn--primary {
   background: var(--color-ink);
-  color: #faf7f4;
+  color: #ffffff;
 }
 
 .btn--primary:hover {
-  background: #45403d;
-  color: #faf7f4;
+  background: #333333;
+  color: #ffffff;
 }
 
 /* Anchor primary buttons: override global `a` / `.site-nav a` link colours */
 a.btn.btn--primary {
-  color: #faf7f4;
+  color: #ffffff;
   text-decoration: none;
 }
 
 a.btn.btn--primary:hover {
-  color: #faf7f4;
+  color: #ffffff;
 }
 
 .btn--ghost {
@@ -344,7 +344,7 @@ a.btn.btn--primary:hover {
 .hero {
   position: relative;
   padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(3rem, 8vw, 5rem);
-  background: linear-gradient(160deg, #faf7f4 0%, #ebe3dd 45%, #e0d4cc 100%);
+  background: linear-gradient(160deg, #f7f7f7 0%, #e8e8e8 45%, #dcdcdc 100%);
   overflow: hidden;
 }
 
@@ -410,13 +410,13 @@ a.btn.btn--primary:hover {
   border: 1px solid var(--color-line);
   border-radius: var(--radius);
   padding: 1.5rem 1.35rem;
-  box-shadow: 0 4px 24px rgba(46, 42, 40, 0.04);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.2s, border-color 0.2s;
 }
 
 .card:hover {
   box-shadow: var(--shadow-soft);
-  border-color: #d9cec5;
+  border-color: #c9c9c9;
 }
 
 .card h3 {
@@ -509,17 +509,45 @@ a.btn.btn--primary:hover {
   margin-bottom: 0.35rem;
 }
 
+/* Sfeerimpressie — klantenfoto’s */
+.photo-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 720px) {
+  .photo-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+.photo-grid__item {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--color-line);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.photo-grid__item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
 /* CTA band */
 .cta-band {
   text-align: center;
   padding: clamp(2.5rem, 6vw, 3.5rem);
-  background: linear-gradient(135deg, #3a3533 0%, #2e2a28 100%);
-  color: #f5f0eb;
+  background: linear-gradient(135deg, #1f1f1f 0%, #141414 100%);
+  color: #f5f5f5;
   border-radius: var(--radius);
 }
 
 .cta-band h2 {
-  color: #f5f0eb;
+  color: #f5f5f5;
   margin: 0 0 1rem;
 }
 
@@ -531,7 +559,7 @@ a.btn.btn--primary:hover {
 }
 
 .cta-band .btn--primary {
-  background: #f5f0eb;
+  background: #f5f5f5;
   color: var(--color-ink);
 }
 
@@ -609,7 +637,7 @@ a.btn.btn--primary:hover {
 /* Behandelingen page */
 .page-hero {
   padding: clamp(2.5rem, 6vw, 3.5rem) 0;
-  background: linear-gradient(180deg, #faf7f4, #ebe3dd);
+  background: linear-gradient(180deg, #f7f7f7, #e4e4e4);
   border-bottom: 1px solid var(--color-line);
 }
 
@@ -623,7 +651,7 @@ a.btn.btn--primary:hover {
   position: sticky;
   top: var(--header-h);
   z-index: 50;
-  background: rgba(250, 247, 244, 0.95);
+  background: rgba(247, 247, 247, 0.95);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--color-line);
   padding: 0.65rem 0;
@@ -851,7 +879,7 @@ a.btn.btn--primary:hover {
 .spray-highlight {
   margin-top: 1.5rem;
   padding: 1rem 1.25rem;
-  background: linear-gradient(135deg, #f0e6e0, #e8dcd4);
+  background: linear-gradient(135deg, #ececec, #dedede);
   border-radius: var(--radius);
   font-weight: 600;
   color: var(--color-ink);
