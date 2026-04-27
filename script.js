@@ -4,6 +4,21 @@
   var y = document.getElementById('y');
   if (y) y.textContent = new Date().getFullYear();
 
+  var header = document.querySelector('.site-header');
+  function syncHeaderHeight() {
+    if (!header) return;
+    document.documentElement.style.setProperty('--header-h', header.offsetHeight + 'px');
+  }
+  if (header) {
+    syncHeaderHeight();
+    if (typeof ResizeObserver !== 'undefined') {
+      new ResizeObserver(syncHeaderHeight).observe(header);
+    } else {
+      window.addEventListener('resize', syncHeaderHeight);
+    }
+    window.addEventListener('orientationchange', syncHeaderHeight);
+  }
+
   var toggle = document.querySelector('.nav-toggle');
   var menu = document.getElementById('site-nav');
   if (!toggle || !menu) return;

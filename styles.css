@@ -136,7 +136,7 @@ h3 {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  min-height: var(--header-h);
+  min-height: 72px;
   padding-block: 0.75rem;
 }
 
@@ -299,18 +299,46 @@ a.btn.btn--primary:hover {
 }
 
 @media (max-width: 767px) {
+  :root {
+    --header-h: 88px;
+  }
+
+  /* backdrop-filter traps `position: fixed` children to the header box in WebKit/Blink,
+     which clips the full-screen drawer — use a solid bar on small screens instead */
+  .site-header {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: var(--color-surface);
+  }
+
   .nav-toggle {
     display: inline-flex;
+    position: relative;
+    z-index: 250;
+  }
+
+  .site-header__cta--mobile {
+    position: relative;
+    z-index: 250;
   }
 
   .site-nav {
     position: fixed;
-    inset: var(--header-h) 0 0 0;
+    top: var(--header-h);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: calc(100dvh - var(--header-h));
+    min-height: calc(100vh - var(--header-h));
+    z-index: 200;
     background: var(--color-bg);
     padding: 1.5rem;
+    padding-bottom: max(1.5rem, env(safe-area-inset-bottom, 0px));
     transform: translateX(100%);
     transition: transform 0.25s ease;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .site-nav.is-open {
